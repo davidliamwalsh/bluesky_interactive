@@ -160,7 +160,7 @@
 
       a {
         color: $header-font;
-        font-size: 17px;
+        font-size: 16px;
         padding: 0 1vw;
       }
       .fas {
@@ -195,7 +195,7 @@
       padding: 0 1vw;
 
       a {
-        font-size: 17px;
+        font-size: 16px;
       }
 
       &:nth-child(1) {
@@ -222,19 +222,6 @@
       &:nth-child(8) {
         transition: none;
       }
-    }
-  }
-}
-
-@media screen and (min-width: $navbar__desktop-break) {
-  .c-navbar {
-
-    &__actions a {
-      font-size: 20px;
-    }
-
-    &__link a {
-      font-size: 20px;
     }
   }
 }
