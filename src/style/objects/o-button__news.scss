@@ -1,0 +1,20 @@
+.o-button__news {
+  color: $header-font;
+  border: 3px solid $header-font;
+  border-radius: 25px;
+  background: transparent;
+  padding: .3em 2em;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: $tablet-break) {
+  .o-button__news {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: $laptop-break) {
+  .o-button__news {
+    font-size: 18px;
+  }
+}
