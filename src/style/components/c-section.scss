@@ -1,0 +1,185 @@
+.c-section {
+  width: 100%;
+  color: $main-font;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 0;
+
+  &__range {
+    background: url(src/images/range.jpg);
+  }
+
+  &__exterior {
+    background: url(src/images/1.jpg);
+  }
+
+  &__performance {
+    background: url(src/images/performance.gif);
+  }
+
+  &__finance {
+    background: url(src/images/finance.jpg);
+  }
+
+  &__hero {
+    height: 50vh;
+    min-height: 350px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &__description {
+    margin: 0 1em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    
+    
+    &--header {
+      overflow: hidden;
+      h2 {
+        font-size: 18px;
+        font-weight: 200;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    &
+    &--main {
+      font-size: 16px;
+
+      &-finance {
+        &__list {
+          list-style-position: outside;
+          padding: 0 1em;
+
+          &_item {
+            list-style-type: disc;
+            padding: .2em 0;
+          }
+        }
+      }
+    }
+
+    &--footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 18px;
+      align-items: center;
+
+      &-span {
+        border: 3px solid $main-font;
+        border-radius: 50%;
+        padding: 0 10px;
+        font-size: 22px;
+        font-weight: 600;
+        &:hover {
+          background: $main-font;
+          color: $header-font;
+        }
+      }
+
+      &-link {
+        padding: 0 .5em;
+      }
+      a {
+        color: $main-font;
+        display: contents;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: $tablet-break) {
+  .c-section {
+    &__description {
+      margin: 0 4em;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      
+      &--header {
+        overflow: hidden;
+        h2 {
+          font-size: 20px;
+        }
+        h1 {
+          font-size: 26px;
+        }
+      }
+  
+      &--main {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $laptop-break) {
+
+  .c-section {
+    &__description {
+      margin: 0 5em;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      
+      &--header {
+        overflow: hidden;
+        h2 {
+          font-size: 22px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+      }
+  
+      &--main {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: $desktop-break) {
+  .c-section {
+    flex-direction: row;
+    height: 100vh;
+
+    &__hero {
+      width: 60vw;
+      height: 80vh;
+      min-height: 560px;
+    }
+
+    &__description {
+      width: 40vw;
+      height: 80vh;
+      display: grid;
+      grid-row-gap: 1.5em;
+      grid-template-rows: 20% 45% auto;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      padding: 2em 0;
+      margin: 0 1em;
+
+      &--footer {
+        align-self: flex-end;
+      }
+    }
+  }
+  .c-section:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
