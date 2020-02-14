@@ -1,0 +1,14 @@
+.c-header {
+
+  @keyframes header {
+    from {
+      bottom: -10vh;
+      opacity: 0;
+    }
+    to {
+      bottom: 0px;
+      opacity: 1;
+    }
+
+  }
+}
